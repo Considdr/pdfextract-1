@@ -42,7 +42,7 @@
     paragraphs to merge incorrectly.
 *** DONE Figure out which state, and when (text object start/end, page
     start/end, text show ops) should be pushed/popped.
-*** DONE Move parsing parameters to the Pdf class. Settable via pdf-extract.
+*** DONE Move parsing parameters to the Pdf class. Settable via pdf-extract-pg.
 
 ** Tasks, up to 3 hours
 *** DONE Handle new line operators, and all show text operators.
@@ -90,7 +90,7 @@
     Probably region construction is creating regions with line and
     non-line content.
 *** DONE Bug: Some section headers being merged into their body as a single region.
-*** DONE Either move pdf-reader changes into pdf-extract or get patches committed.
+*** DONE Either move pdf-reader changes into pdf-extract-pg or get patches committed.
 *** DONE Split by line spacing and split by margin
 *** DONE Bug: Section objects appear within <page> elements. Should be pageless.
 *** DONE Bug: When merging chunks left to right, sometimes they merge out of order.

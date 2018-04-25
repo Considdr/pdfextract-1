@@ -12,7 +12,7 @@ require 'commander/import'
 require 'nokogiri'
 require 'json'
 require 'mongo'
-require_relative '../lib/pdf-extract'
+require_relative '../lib/pdf-extract-pg'
 
 program :name, "catalog"
 program :version, "0.0.1"
@@ -161,7 +161,7 @@ command :stats do |c|
       end
 
       if diffs.count.zero?
-        say "No records with a PDF and pdf-extract results"
+        say "No records with a PDF and pdf-extract-pg results"
       else
         successful = diffs.count { |diff| diff.zero? }
         unsuccessful = diffs.count - successful

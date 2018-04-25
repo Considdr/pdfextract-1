@@ -1,6 +1,6 @@
 require 'json'
 require 'highline'
-require_relative '../lib/pdf-extract.rb'
+require_relative '../lib/pdf-extract-pg.rb'
 
 class Assign
 
